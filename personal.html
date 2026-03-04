@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jane | Portfolio</title>
+  <link rel="stylesheet" href="mart.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h3>Jane's Portfolio</h3>
+      <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+    <img src="avatar 1.jpg" alt="My Avatar" class="avatar"> 
+    <h1 class="subtitle">Rosheil Jane Perez</h1>
+    <p class="subtitle">Student • Web developer • Gamer</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        Hello I’m Rosheil Jane Perez ICT Student in Nabunturan National Comprehensive High School.
+        As an ICT programming student, you build a strong foundation in software development, algorithm design,
+         and web technologies to solve real world problems.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>This is my Projects Lyrics,Student Registration,and Schooldashboard
+      </h3> 
+      
+    </div>
+    <div class="slider">
+      <div class="slides" id="slideContainer">
+        <img src="Screenshot (6).png"/>
+        <img src="Screenshot (7).png" />
+        <img src="Screenshot (8).png" />
+      </div>
+    
+      <div class="buttons">
+        <button onclick="prevSlide()">❮</button>
+        <button onclick="nextSlide()">❯</button>
+      </div>
+    </div>
+    
+    <script>
+      let index = 0;
+      const slides = document.getElementById("slideContainer");
+      const totalSlides = slides.children.length;
+    
+      function showSlide() {
+        slides.style.transform = `translateX(-${index * 600}px)`;
+      }
+    
+      function nextSlide() {
+        index = (index + 1) % totalSlides;
+        showSlide();
+      }
+    
+      function prevSlide() {
+        index = (index - 1 + totalSlides) % totalSlides;
+        showSlide();
+      }
+    </script>
+
+  
+  <section>
+    <h2>Contact</h2>
+    <div class="card">
+      <p>
+        <a href="https://www.facebook.com/rosheil.jane.perez.2025" target="_blank">
+          Visit my Facebook
+        </a>
+        <br>
+        <a href="https://www.instagram.com/jane_xyxyn?igsh=MWRwNG50MnBpd3JqZQ==
+        " target="_blank">
+          Visit my Instagram
+        </a>
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>

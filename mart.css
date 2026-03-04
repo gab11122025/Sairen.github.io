@@ -1,0 +1,175 @@
+
+    body {
+      margin: 0;
+      background-image: url('download (5).jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+      color: #ffffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 0rem 0rem;
+      background-image: url('flower.jpg');
+   background-size: cover;
+   background-position: 0rem;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      letter-spacing: 1px;
+      color: antiquewhite;
+     
+    }
+
+
+    section {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      border-bottom: 1px solid #f2c6d4;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: #f5a9ff;
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    a {
+      color: #d67fa0;
+      text-decoration: none;
+      font-weight: 400;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #380a1a;
+    
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.0rem 2.1rem;
+      background: #fca5fc;
+      border-bottom: 1px solid #000000;
+      position: sticky;
+      top: 0;
+      z-index: 200;
+    }
+    
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: #6b4b57;
+    }
+    
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      font-size: 0.95rem;
+      color: #6b4b57;
+      position: relative;
+    }
+    
+    .nav-links a::after {
+      content: "♡";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -12px;
+      opacity: 0;
+      font-size: 0.8rem;
+      transition: opacity 0.3s ease;
+    }
+    
+    .nav-links a:hover::after {
+      opacity: 1;
+    }
+
+    .avatar {
+      width: 120px;        /* adjust size */
+      height: 120px;       /* make it equal to width */
+      border-radius: 50%;
+      object-fit: cover;   /* prevents stretching */
+      border: 3px solid rgb(206, 50, 97);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    .slider {
+      position: relative;
+      width: 600px;
+      height: 350px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slides img {
+      width: 600px;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .buttons {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .buttons button {
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .buttons button:hover {
+      background: rgba(0,0,0,0.8);
+    }
+  
+    
+    
+  
